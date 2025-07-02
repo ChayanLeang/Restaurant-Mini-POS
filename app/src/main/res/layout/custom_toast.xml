@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/tv"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:text="@string/text"
+    android:paddingVertical="20dp"
+    android:drawablePadding="15dp"
+    android:gravity="center|start"
+    android:textColor="@color/white"
+    android:paddingHorizontal="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/green"
+    android:layout_marginHorizontal="20dp"
+    android:background="@drawable/bg_radius_10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:drawableStartCompat="@drawable/ic_check_circle_24"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

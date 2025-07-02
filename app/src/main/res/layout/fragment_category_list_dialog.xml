@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".presentation.ui.fragment.CategoryListDialogFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/mtb"
+        app:titleCentered="true"
+        app:title="SELECT CATEGORY"
+        app:titleTextColor="@color/white"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:textSize="16sp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:id="@+id/searchTIET"
+        android:drawablePadding="5dp"
+        android:paddingHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:drawableTint="@color/orange"
+        android:backgroundTint="@color/gains_boro"
+        android:background="@drawable/bg_radius_10"
+        app:layout_constraintTop_toBottomOf="@id/mtb"
+        android:drawableStart="@drawable/ic_search_24"
+        android:hint="@string/type_something_to_search_hint"/>
+
+    <ImageView
+        android:padding="20dp"
+        app:tint="@color/grey"
+        android:id="@+id/noItemIV"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_search_24"
+        android:background="@drawable/bg_circle"
+        android:contentDescription="@string/text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/gains_boro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:textSize="16sp"
+        android:gravity="center"
+        android:id="@+id/noItemTV"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/you_have_no_item_yet"
+        app:layout_constraintTop_toBottomOf="@id/noItemIV"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/cancelMBt"
+        app:layout_constraintTop_toBottomOf="@id/searchTIET" />
+
+    <com.google.android.material.button.MaterialButton
+        app:cornerRadius="0dp"
+        android:textSize="17sp"
+        android:id="@+id/cancelMBt"
+        android:layout_height="50dp"
+        android:text="@string/cancel"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/orange"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

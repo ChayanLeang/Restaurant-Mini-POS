@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/productIV"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/text"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp">
+
+            <TextView
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@string/text"
+                android:id="@+id/productNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/red"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/productSellPriceTV"
+                android:text="@string/one_string_format"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                app:tint="@color/red"
+                android:id="@+id/deleteIV"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:contentDescription="@string/text"
+                android:src="@drawable/ic_delete_forever_24"/>
+
+            <LinearLayout
+                android:padding="7dp"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radius_20_stroke_2_gains_boro">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/minus"
+                    android:id="@+id/minusItemIV"
+                    android:contentDescription="@string/text"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="@string/text"
+                    android:id="@+id/quantityTV"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    app:tint="@color/red"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/plusItemIV"
+                    android:src="@drawable/ic_add_24"
+                    android:contentDescription="@string/text"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,82 @@
+<resources>
+    <string name="text">Text</string>
+    <string name="cancel">Cancel</string>
+    <string name="payment">PAYMENT</string>
+    <string name="discount">Discount:</string>
+    <string name="sub_total">Sub Total:</string>
+    <string name="note_format">Note: %s</string>
+    <string name="code_format">Code: %d</string>
+    <string name="address_hint">Address</string>
+    <string name="one_string_format">$%s</string>
+    <string name="discount_hint">Discount</string>
+    <string name="two_string_format">%s %s</string>
+    <string name="total_format">Total: $%s</string>
+    <string name="total_price">Total Price:</string>
+    <string name="time_format">%02d:%02d %s</string>
+    <string name="table_number">Table Number:</string>
+    <string name="app_name">RestaurantMiniPOS</string>
+    <string name="quantity_format">Quantity: %d</string>
+    <string name="search_here_hint">Search Here…</string>
+    <string name="discount_format">Discount: $%s</string>
+    <string name="table_number_hint">Table Number</string>
+    <string name="expense_date_hint">Expense Date</string>
+    <string name="expense_time_hint">Expense Time</string>
+    <string name="product_name_hint">Product Name</string>
+    <string name="expense_name_hint">Expense Name</string>
+    <string name="product_code_hint">Product Code</string>
+    <string name="expense_note_hint">Expense Note</string>
+    <string name="sub_total_format">Sub Total: $%s</string>
+    <string name="customer_name_hint">Customer Name</string>
+    <string name="order_type_format">Order Type: %s</string>
+    <string name="category_name_hint">Category Name</string>
+    <string name="yyyy_mm_dd_format">%04d-%02d-%02d</string>
+    <string name="sell_price_format">Sell Price: $%s</string>
+    <string name="expense_amount_hint">Expense Amount</string>
+    <string name="three_string_format">$%s x %d = $%s</string>
+    <string name="address_optional">Address (optional)</string>
+    <string name="total_price_format">Total Price: $%s</string>
+    <string name="expense_date_required">Expense Date *</string>
+    <string name="expense_time_required">Expense Time *</string>
+    <string name="phone_number_required">Phone Number *</string>
+    <string name="product_name_required">Product Name *</string>
+    <string name="expense_name_required">Expense Name *</string>
+    <string name="product_code_required">Product Code *</string>
+    <string name="table_number_format">Table Number: %d</string>
+    <string name="order_type_name_hint">Order Type Name</string>
+    <string name="pos"><font color="#FFFFFFFF">POS</font></string>
+    <string name="customer_name_required">Customer Name *</string>
+    <string name="category_name_required">Category Name *</string>
+    <string name="product_category_hint">Product Category</string>
+    <string name="total_expense_format">Total Expense: $%s</string>
+    <string name="save"><font color="#FFFFFFFF">Save</font></string>
+    <string name="expense_amount_required">Expense Amount *</string>
+    <string name="payment_method_format">Payment Method: %s</string>
+    <string name="choose_product_image">Choose Product Image</string>
+    <string name="product_sell_price_hint">Product Sell Price</string>
+    <string name="order_type_name_required">Order Type Name *</string>
+    <string name="submit"><font color="#FFFFFFFF">SUBMIT</font></string>
+    <string name="payment_method_name_hint">Payment Method Name</string>
+    <string name="product_category_required">Product Category *</string>
+    <string name="price"><font color="#FFFFFFFF">Price: </font></string>
+    <string name="report"><font color="#FFFFFFFF">Report</font></string>
+    <string name="expense_note_optional">Expense Note (optional)</string>
+    <string name="setting"><font color="#FFFFFFFF">Setting</font></string>
+    <string name="product_sell_price_required">Product Sell Price *</string>
+    <string name="product_image_required">Product Image is required</string>
+    <string name="payment_method_name_required">Payment Method Name *</string>
+    <string name="all_sales"><font color="#FFFFFFFF">All Sales</font></string>
+    <string name="add_to_cart"><font color="#FFFFFFFF">ADD TO CART</font></string>
+    <string name="all_expenses"><font color="#FFFFFFFF">All Expenses</font></string>
+    <string name="all_products"><font color="#FFFFFFFF">All Products</font></string>
+    <string name="all_customers"><font color="#FFFFFFFF">All Customers</font></string>
+    <string name="phone_number_hint"><font color="#A9A9A9">Phone Number</font></string>
+    <string name="all_categories"><font color="#FFFFFFFF">All Categories</font></string>
+    <string name="all_order_types"><font color="#FFFFFFFF">All Order Types</font></string>
+    <string name="offline_soft_sell"><font color="#FFFFFFFF">OFFLINE SOFT SELL</font></string>
+    <string name="all_payment_methods"><font color="#FFFFFFFF">All Payment Methods</font></string>
+    <string name="you_have_no_item_yet"><font color="#A9A9A9"><b>You have no item yet</b></font></string>
+    <string name="type_something_to_search_hint"><font color="#433D3D">Type something to search</font></string>
+    <string name="smart_solution_for_your_restaurant"><font color="#FFFFFFFF">Smart Solution for Your Restaurant</font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

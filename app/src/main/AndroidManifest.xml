@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        tools:targetApi="31"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true"
+        android:name=".RestaurantMiniPOSApp"
+        android:fullBackupContent="@xml/backup_rules"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.RestaurantMiniPOS"
+        android:dataExtractionRules="@xml/data_extraction_rules">
+        <activity
+            android:name=".presentation.ui.activity.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.expense.ExpenseReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.ReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.PosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.sale.SaleDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.sale.SaleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.product.EditProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.product.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.product.ProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.payment_method.EditPaymentMethodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.payment_method.AddPaymentMethodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.payment_method.PaymentMethodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.order_type.EditOrderTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.order_type.AddOrderTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.order_type.OrderTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.expense.EditExpenseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.expense.AddExpenseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.expense.ExpenseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.customer.EditCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.customer.AddCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.customer.CustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.category.EditCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.category.AddCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.category.CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

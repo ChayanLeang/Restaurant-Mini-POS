@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:padding="5dp"
+    android:id="@+id/saleItem"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/orange"
+    android:background="@drawable/bg_radius_10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/sale"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:text="@string/text"
+        android:id="@+id/customerNameTV"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv" />
+
+    <TextView
+        android:textSize="15sp"
+        android:id="@+id/codeTV"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/white"
+        android:text="@string/code_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/customerNameTV"
+        app:layout_constraintStart_toStartOf="@id/customerNameTV"/>
+
+    <TextView
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="15sp"
+        android:layout_width="0dp"
+        android:id="@+id/orderTypeTV"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="@string/order_type_format"
+        app:layout_constraintTop_toBottomOf="@id/codeTV"
+        app:layout_constraintStart_toStartOf="@id/codeTV"
+        app:layout_constraintEnd_toEndOf="@id/customerNameTV"/>
+
+    <TextView
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="15sp"
+        android:layout_width="0dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/white"
+        android:id="@+id/paymentMethodTV"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_method_format"
+        app:layout_constraintEnd_toEndOf="@id/customerNameTV"
+        app:layout_constraintTop_toBottomOf="@id/orderTypeTV"
+        app:layout_constraintStart_toStartOf="@id/orderTypeTV" />
+
+    <TextView
+        android:textSize="15sp"
+        android:text="@string/text"
+        android:id="@+id/dateTimeTV"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/paymentMethodTV"
+        app:layout_constraintStart_toStartOf="@id/paymentMethodTV"/>
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/tableNumberTV"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/table_number_format"
+        app:layout_constraintTop_toBottomOf="@id/dateTimeTV"
+        app:layout_constraintStart_toStartOf="@id/dateTimeTV"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
